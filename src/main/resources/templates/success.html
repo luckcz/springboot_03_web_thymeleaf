@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>success.........</h1>
+	<!-- th:text="${hello}" 将div文本里面的内容设置为。。。 -->
+	<div th:text="${hello}">这是一个模板引用</div>
+	<div th:utext="${hello}">这是一个模板引用</div>
+	<div th:each="validate:${list}" th:text="${validate}">这是一个模板引用</div>
+	<div>
+		<span th:each="validate:${list}">[[${validate}]]</span>
+	</div>
+</body>
+</html>
